@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Format
+        run: pnpm exec vp fmt --check
+
+      - name: Lint
+        run: pnpm exec vp lint
+
+      - name: Test
+        run: pnpm exec vp run test -r
+
+      - name: Build
+        run: pnpm exec vp run build -r
