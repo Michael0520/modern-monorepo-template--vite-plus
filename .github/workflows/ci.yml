@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install vp
-        run: npx --yes vite-plus@latest
-
       - uses: actions/setup-node@v4
         with:
-          node-version-file: package.json
+          node-version-file: .node-version
+
+      - name: Install vp
+        run: npm install -g vite-plus
 
       - name: Install dependencies
         run: vp install
