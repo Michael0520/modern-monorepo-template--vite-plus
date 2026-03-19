@@ -13,24 +13,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
-
-      - name: Install vp
-        run: npm install -g vite-plus
+          cache: pnpm
 
       - name: Install dependencies
-        run: vp install
+        run: pnpm install
 
       - name: Format
-        run: vp fmt --check
+        run: pnpm exec vp fmt --check
 
       - name: Lint
-        run: vp lint
+        run: pnpm exec vp lint
 
       - name: Test
-        run: vp run test -r
+        run: pnpm exec vp run test -r
 
       - name: Build
-        run: vp run build -r
+        run: pnpm exec vp run build -r
