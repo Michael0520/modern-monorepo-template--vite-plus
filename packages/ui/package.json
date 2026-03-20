@@ -12,6 +12,7 @@
     "ui": "pnpm dlx shadcn@latest"
   },
   "dependencies": {
+    "@base-ui/react": "catalog:",
     "class-variance-authority": "catalog:",
     "clsx": "catalog:",
     "lucide-react": "catalog:",

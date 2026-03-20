@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Button } from "@repo/ui/components/button";
 
 // @ts-expect-error route path validated after TanStack Start generates routeTree
 export const Route = createFileRoute("/")({
@@ -13,6 +14,9 @@ function Home() {
         <p className="mt-4 text-muted-foreground">
           TanStack Start + React + Tailwind CSS + shadcn/ui
         </p>
+        <Button className="mt-6" size="lg">
+          Get Started
+        </Button>
       </div>
     </div>
   );
