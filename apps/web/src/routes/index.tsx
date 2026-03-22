@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@repo/ui/components/button";
 
-// @ts-expect-error route path validated after TanStack Start generates routeTree
 export const Route = createFileRoute("/")({
   component: Home,
 });
