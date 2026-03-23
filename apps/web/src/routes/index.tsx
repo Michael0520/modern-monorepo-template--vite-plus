@@ -79,8 +79,23 @@ function Home() {
           Tailwind CSS — powered by the Vite+ unified toolchain.
         </p>
         <div className="mt-8 flex gap-3">
-          <Button size="lg">Get Started</Button>
-          <Button variant="outline" size="lg">
+          <Button
+            size="lg"
+            render={<a href="https://github.com/Michael0520/modern-monorepo-template--vite-plus" />}
+          >
+            Get Started
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            render={
+              <a
+                href="https://github.com/Michael0520/modern-monorepo-template--vite-plus"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            }
+          >
             GitHub
           </Button>
         </div>
