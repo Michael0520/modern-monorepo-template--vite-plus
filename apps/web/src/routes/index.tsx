@@ -51,15 +51,15 @@ const features = [
 ];
 
 const techStack = [
-  { name: "TanStack Start", category: "Framework" },
-  { name: "React 19", category: "UI" },
-  { name: "TypeScript", category: "Language" },
-  { name: "Tailwind CSS v4", category: "Styling" },
-  { name: "shadcn/ui", category: "Components" },
-  { name: "Vite+", category: "Toolchain" },
-  { name: "Vitest", category: "Testing" },
-  { name: "Oxlint", category: "Linting" },
-  { name: "pnpm", category: "Package Manager" },
+  "TanStack Start",
+  "React 19",
+  "TypeScript",
+  "Tailwind CSS v4",
+  "shadcn/ui",
+  "Vite+",
+  "Vitest",
+  "Oxlint",
+  "pnpm",
 ];
 
 function Home() {
@@ -145,9 +145,9 @@ function Home() {
           <h2 className="text-3xl font-bold">Tech Stack</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-2">
-          {techStack.map((tech) => (
-            <Badge key={tech.name} variant="secondary" className="px-3 py-1 text-sm">
-              {tech.name}
+          {techStack.map((name) => (
+            <Badge key={name} variant="secondary" className="px-3 py-1 text-sm">
+              {name}
             </Badge>
           ))}
         </div>
