@@ -9,7 +9,7 @@ export const Route = createRootRoute({
       { title: "Vite+ App" },
     ],
     links: [
-      { rel: "icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "stylesheet", href: styles },
     ],
   }),
