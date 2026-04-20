@@ -1,7 +1,7 @@
 {
   "name": "utils",
   "version": "0.0.0",
-  "description": "",
+  "description": "Reusable TypeScript utilities.",
   "license": "MIT",
   "files": [
     "dist"
@@ -20,10 +20,10 @@
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
-    "@typescript/native-preview": "7.0.0-dev.20260319.1",
-    "bumpp": "^11.0.1",
-    "typescript": "^5.9.3",
+    "@types/node": "catalog:",
+    "@typescript/native-preview": "catalog:",
+    "bumpp": "catalog:",
+    "typescript": "catalog:",
     "vite-plus": "catalog:",
     "vitest": "catalog:"
   }

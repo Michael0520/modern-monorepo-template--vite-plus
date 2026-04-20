@@ -1,23 +1,18 @@
-# tsdown-starter
+# utils
 
-A starter for creating a TypeScript package.
+Reusable TypeScript utilities for this monorepo.
 
 ## Development
 
-- Install dependencies:
-
 ```bash
-npm install
+vp install              # Install workspace dependencies
+vp run utils#test       # Run tests
+vp run utils#build      # Build the library (tsdown)
+vp run utils#dev        # Rebuild on change
 ```
 
-- Run the unit tests:
+## Release
 
 ```bash
-npm run test
-```
-
-- Build the library:
-
-```bash
-npm run build
+pnpm --filter utils release    # bumpp + publish
 ```
