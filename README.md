@@ -31,8 +31,8 @@ vp run dev
 vp run dev              # Start website dev server
 vp run web#dev          # Start TanStack Start dev server
 vp check                # Format + lint + typecheck
-vp run test -r          # Run all tests
-vp run build -r         # Build all packages
+vp run -r test          # Run all tests
+vp run -r build         # Build all packages
 vp run ready            # Full validation pipeline
 ```
 
@@ -48,7 +48,7 @@ cd apps/web && pnpm dlx shadcn@latest add <component>
 
 ## Tech Stack
 
-- **Runtime:** Node.js >= 22
+- **Runtime:** Node.js >= 24
 - **Package Manager:** pnpm (managed via `vp`)
 - **Framework:** TanStack Start + React 19
 - **UI Components:** shadcn/ui v4 (Base UI, Vega style)
