@@ -3,8 +3,6 @@ packages:
   - packages/*
   - tools/*
 
-catalogMode: prefer
-
 catalog:
   # React
   react: ^19.2.7
@@ -36,13 +34,16 @@ catalog:
   "@typescript/native-preview": 7.0.0-dev.20260319.1
   bumpp: ^11.1.0
   typescript: ^6.0.3
-  vite: npm:@voidzero-dev/vite-plus-core@latest
-  vite-plus: latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
+  vite: npm:@voidzero-dev/vite-plus-core@^0.2.1
+  vite-plus: ^0.2.1
+  vitest: 4.1.9
+
+catalogMode: prefer
 
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
+  "@types/node": "catalog:"
 peerDependencyRules:
   allowAny:
     - vite
