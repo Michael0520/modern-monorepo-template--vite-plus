@@ -9,5 +9,5 @@
 ## Checklist
 
 - [ ] `vp check` passes
-- [ ] `vp run test -r` passes
-- [ ] `vp run build -r` passes
+- [ ] `vp run -r test` passes
+- [ ] `vp run -r build` passes
